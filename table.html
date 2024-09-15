@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+   
+    <title>Таблица</title>   
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <header>
+        <h1>Таблица KI/PI</h1>
+        <div class="nav">
+            <a href="home.html" class="home-button">Вернуться назад</a>
+        </div>
+    </header>
+</head>
+<script>
+    window.MathJax = {
+    tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$', '$$'], ['\\[', '\\]']]
+    }
+    };
+    </script>
+<body>
+<input type="radio" name="mode" id="theory-button" class="theory-button" checked>
+<label for="theory-button" class="button">Теория</label>
+<input type="radio" name="mode" id="practice-button" class="practice-button">
+<label for="practice-button" class="button">Практика</label>
+<table>
+    <tr>
+        <td class="inline" rowspan="2">
+            \[\begin{align}&\overrightarrow{{{\tau }_{0}}}=(\cos\alpha,\cos\beta,\cos\gamma )\\ &\\ \end{align}\]
+          </td>
+          <td class="back" rowspan="2">\[\begin{align}
+            & \int\limits_{AB}^{{}}{(P\cos \alpha }+Q\cos \beta +R\cos \gamma )dl= \\ 
+           & =\int\limits_{AB}^{{}}{Pdx+Qdy+Rdz} \\ 
+           &  \\ 
+          \end{align}\]
+          <div class="tooltip theory">
+            <div class="theory-tooltip">Здесь будет теория</div>
+        </div>
+        <div class="tooltip practice">
+            <div class="practice-tooltip">Здесь будут примеры</div>
+        </div>
+        </td>
+        <td> Ки1</td>
+        <td class="back">\[\int\limits_{AB}^{{}}{fdl=\int\limits_{a}^{b}{f\cdot \sqrt{{{(\varphi ')}^{2}}+{{(\psi ')}^{2}}+{{(\chi ')}^{2}}}}}dt\]    
+            <div class="tooltip theory">
+                <div class="theory-tooltip">Здесь будет теория</div>
+            </div>
+            <div class="tooltip practice">
+                <div class="practice-tooltip">Здесь будут примеры</div>
+            </div>
+        </td>
+        <td class="one borders" rowspan="2"> R1</td>
+    </tr>
+    
+    <tr>
+        
+        
+        <td class="one" rowspan="2"> Ки2</td>
+        <td class="back" >\[\int\limits_{AB}{Pdx+Qdx+Rdz=\int\limits_{a}^{b}{(P\varphi '(t)+Q\psi '(t)+R\chi '(t))dt}}\]
+            <div class="tooltip theory">
+                <div class="theory-tooltip">Здесь будет теория</div>
+            </div>
+            <div class="tooltip practice">
+                <div class="practice-tooltip">Здесь будут примеры</div>
+            </div>
+        </td>    
+      
+    </tr>
+    <tr>
+        <td class="one"  rowspan="5">
+            \[\begin{align}
+            & \overrightarrow{{{n}_{0}}}=(\cos \alpha ,\cos \beta ,\cos \gamma ) \\ 
+           &  \\ 
+          \end{align}\]          
+        </td>
+        <td class="back" rowspan="2">
+            \[\begin{align}
+            & \oint\limits_{\partial S}{Pdx+Qdy+Rdz=} \\ 
+           & =\iint\limits_{S}{\left| \left. \begin{matrix}
+             \cos \alpha  & \cos \beta  & \cos \gamma   \\
+             \frac{\partial }{\partial x} & \frac{\partial }{\partial y} & \frac{\partial }{\partial z}  \\
+             P & Q & R  \\
+          \end{matrix} \right| \right.}dS \\ 
+          \end{align}\] 
+          <div class="tooltip theory">
+            <div class="theory-tooltip">Здесь будет теория</div>
+        </div>
+        <div class="tooltip practice">
+            <div class="practice-tooltip">Здесь будут примеры</div>
+        </div>
+        </td>
+       
+        <td class="back">
+            \[\oint\limits_{\partial S}{Pdx+Qdy+Rdz=\iint\limits_{{{S}_{uv}}}{\left| \begin{matrix}
+               A & B & C  \\
+               \frac{\partial }{\partial x} & \frac{\partial }{\partial y} & \frac{\partial }{\partial z}  \\
+               P & Q & R  \\
+            \end{matrix} \right|}}dudv\] 
+            <div class="tooltip theory">
+                <div class="theory-tooltip">Здесь будет теория</div>
+            </div>
+            <div class="tooltip practice">
+                <div class="practice-tooltip">Здесь будут примеры</div>
+            </div>
+            </td>
+            <td class=" one borders" rowspan="4"> R2</td>
+    </tr>
+    <tr>
+       
+        <td class=" one" rowspan="2"> Пи1</td>
+       
+        <td class="back" rowspan="2">$\iint\limits_{S}{fdS=\iint\limits_{{{S}_{u\nu }}}{f\sqrt{{{A}^{2}}+{{B}^{2}}+{{C}^{2}}}dud\nu }}$
+            <div class="tooltip theory">
+                <div class="theory-tooltip">Здесь будет теория</div>
+            </div>
+            <div class="tooltip practice">
+                <div class="practice-tooltip">Здесь будут примеры</div>
+            </div>
+        </td>
+        
+    </tr>
+    <tr>
+        
+        <td class="back inline"  rowspan="">
+            \[\begin{align}
+            & \iint\limits_{S}{(P\cos \alpha +Q\cos \beta +R\cos \gamma )dS=} \\ 
+         & =\iint\limits_{S}{Pdydz+Qdzdx+Rdxdy} \\ 
+        \end{align}\]     
+        <div class="tooltip theory">
+            <div class="theory-tooltip">Здесь будет теория</div>
+        </div>
+        <div class="tooltip practice">
+            <div class="practice-tooltip">Здесь будут примеры</div>
+        </div>
+       </td>
+       
+        
+        
+    </tr>
+    <tr>
+       
+        <td class="inline"></td>
+        <td class=" one" rowspan="2"> Пи2</td>
+        <td class="back">\[\mathop{{\int\!\!\!\!\!\int}\mkern-21mu \bigcirc}\limits_S 
+            Pdydz+Qdzdx+Rdxdy =\iiint\limits_{V}{(\frac{\partial P}{\partial x}+\frac{\partial Q}{\partial y}+\frac{\partial R}{\partial z})}\]
+            <div class="tooltip theory">
+                <div class="theory-tooltip">Здесь будет теория</div>
+            </div>
+            <div class="tooltip practice">
+                <div class="practice-tooltip">Здесь будут примеры</div>
+            </div>
+        </td>
+        
+    </tr>
+    <tr>
+        
+        <td class="inline"></td>
+        
+        <td class="back">$\iint\limits_{S}{Pdydz+Qdzdx+Rdxdy=\iint\limits_{{{S}_{uv}}}{(AP+BQ+CR)dudv}}$
+            <div class="tooltip theory">
+                <div class="theory-tooltip">Здесь будет теория</div>
+            </div>
+            <div class="tooltip practice">
+                <div class="practice-tooltip">Здесь будут примеры</div>
+            </div>
+        </td>
+        <td class="one borders;">R3</td>
+    </tr>
+   
+</table>
+</body>
+</html>

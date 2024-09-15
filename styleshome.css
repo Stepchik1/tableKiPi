@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif; /* Шрифт для текста */
+    background-color: #f4f4f4; /* Цвет фона */
+    margin: 0;
+    padding: 20px; /* Поля вокруг содержимого */
+}
+
+.container {
+    max-width: 600px; /* Максимальная ширина контейнера */
+    margin: auto; /* Центрирование контейнера */
+    padding: 20px; /* Поля внутри контейнера */
+    background: white; /* Цвет фона контейнера */
+    border-radius: 8px; /* Скругление углов контейнера */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень для контейнера */
+}
+
+h1 {
+    color: #333; /* Цвет заголовка */
+    text-align: center; /* Центрирование заголовка */
+}
+
+.page-button {
+    display: inline-block; /* Превращаем ссылку в блочный элемент */
+    padding: 10px 20px; /* Поля внутри кнопки */
+    background-color: #3498db; /* Цвет кнопки */
+    color: white; /* Цвет текста кнопки */
+    text-decoration: none; /* Убираем подчеркивание */
+    border-radius: 5px; /* Скругление углов кнопки */
+    transition: background-color 0.3s, transform 0.3s; /* Эффекты перехода */
+    font-size: 1em; /* Размер текста */
+    text-align: center; /* Центрирование текста кнопки */
+}
+
+.page-button:hover {
+    background-color: #2980b9; /* Цвет кнопки при наведении */
+    transform: scale(1.05); /* Увеличение при наведении */
+}
